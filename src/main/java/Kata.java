@@ -1,8 +1,9 @@
-public class Kata
-{
-    public static int opposite(int number)
-    {
+import java.util.List;
+import java.util.stream.Collectors;
 
-        return number * -1;
+public class Kata {
+    public static String reverseWords(final String original) {
+        // Have at it
+        return "";
     }
 }
