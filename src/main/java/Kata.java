@@ -3,6 +3,6 @@ public class Kata
     public static int opposite(int number)
     {
 
-        return 0;
+        return number * -1;
     }
 }
