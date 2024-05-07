@@ -12,4 +12,23 @@ public class SolutionTest {
         assertEquals("elbuod  decaps  sdrow", Kata.reverseWords("double  spaced  words"));
     }
 
+    @Test
+    public void doubleSpaced() {
+        assertEquals("elbuod  decaps  sdrow", Kata.reverseWords("double  spaced  words"));
+    }
+
+    @Test
+    public void reverseOneWord() {
+        assertEquals("elppa", Kata.reverseWords("apple"));
+    }
+
+    @Test
+    public void singleLetterReverse() {
+        assertEquals("a b c d", Kata.reverseWords("a b c d"));
+    }
+
+    @Test
+    public void allSpace() {
+        assertEquals("    ", Kata.reverseWords("    "));
+    }
 }
