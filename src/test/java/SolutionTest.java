@@ -20,4 +20,5 @@ public class SolutionTest {
         assertEquals(176, Sid.simpleMultiplication(22));
         assertEquals(208, Sid.simpleMultiplication(26));
     }
+
 }

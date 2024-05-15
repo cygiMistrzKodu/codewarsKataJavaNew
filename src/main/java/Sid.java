@@ -1,6 +1,12 @@
+import java.util.stream.IntStream;
+
 public class Sid {
     public static int simpleMultiplication(int n) {
-        //your code here
-        return -1;
+
+        if (n % 2 == 0) {
+            return n*8;
+        }
+
+        return n*9;
     }
 }
