@@ -1,12 +1,6 @@
-import java.util.stream.IntStream;
-
-public class Sid {
-    public static int simpleMultiplication(int n) {
-
-        if (n % 2 == 0) {
-            return n*8;
-        }
-
-        return n*9;
+class Kata {
+    public static String countingSheep(int num) {
+        //Add your code here
+        return "";
     }
 }
