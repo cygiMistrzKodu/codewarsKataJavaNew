@@ -1,13 +1,16 @@
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 import org.junit.runners.JUnit4;
 
 public class SolutionTest {
+
     @Test
-    public void testSomething() {
-        assertEquals("", Kata.countingSheep(0));
-        assertEquals("1 sheep...", Kata.countingSheep(1));
-        assertEquals("1 sheep...2 sheep...", Kata.countingSheep(2));
-        assertEquals("1 sheep...2 sheep...3 sheep...", Kata.countingSheep(3));
+    public void sampleTests() {
+        assertArrayEquals(new int[] {2}, Kata.arrayDiff(new int [] {1,2}, new int[] {1}));
+        assertArrayEquals(new int[] {2,2}, Kata.arrayDiff(new int [] {1,2,2}, new int[] {1}));
+        assertArrayEquals(new int[] {1}, Kata.arrayDiff(new int [] {1,2,2}, new int[] {2}));
+        assertArrayEquals(new int[] {1,2,2}, Kata.arrayDiff(new int [] {1,2,2}, new int[] {}));
+        assertArrayEquals(new int[] {}, Kata.arrayDiff(new int [] {}, new int[] {1,2}));
     }
+
 }
