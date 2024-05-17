@@ -24,4 +24,47 @@ public class AreSameTest {
         int[] b = new int[]{1, 31};
         assertEquals(false, AreSame.comp(a, b));
     }
+
+    @Test
+    public void aIsNull() {
+        int[] a = null;
+        int[] b = new int[]{1, 31};
+        assertEquals(false, AreSame.comp(a, b));
+    }
+
+    @Test
+    public void bIsNull() {
+        int[] a = new int[]{4, 4};
+        int[] b = null;
+        assertEquals(false, AreSame.comp(a, b));
+    }
+
+    @Test
+    public void aAndbisNull() {
+        int[] a = null;
+        int[] b = null;
+        assertEquals(false, AreSame.comp(a, b));
+    }
+
+    @Test
+    public void oneIsEmpty() {
+        int[] a = new int[]{};
+        int[] b = new int[]{1};
+        assertEquals(false, AreSame.comp(a, b));
+    }
+
+    @Test
+    public void secondIsEmpty() {
+        int[] a = new int[]{1};
+        int[] b = new int[]{};
+        assertEquals(false, AreSame.comp(a, b));
+    }
+
+    @Test
+    public void bothIsEmpty() {
+        int[] a = new int[]{};
+        int[] b = new int[]{};
+        assertEquals(true, AreSame.comp(a, b));
+    }
+
 }
