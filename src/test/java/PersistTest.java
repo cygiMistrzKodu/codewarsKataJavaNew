@@ -10,4 +10,5 @@ public class PersistTest {
         assertEquals(2, Persist.persistence( 25), "Incorrect answer for n=25" );
         assertEquals(4, Persist.persistence(999), "Incorrect answer for n=999");
     }
+
 }
