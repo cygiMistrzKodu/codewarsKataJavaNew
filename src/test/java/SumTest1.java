@@ -1,6 +1,5 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
 
 
 public class SumTest1 {
@@ -12,6 +11,11 @@ public class SumTest1 {
     {
         assertEquals(-1, s.GetSum(0, -1));
         assertEquals(1, s.GetSum(0, 1));
+        assertEquals(1, s.GetSum(1, 1));
+        assertEquals(2, s.GetSum(-1, 2));
+        assertEquals(3, s.GetSum(1, 2));
     }
+
+
 
 }
